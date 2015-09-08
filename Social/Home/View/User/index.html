@@ -1,0 +1,25 @@
+<extend name="User/Base/common"/>
+<block name="title">Social Engineer</block>
+
+<block name="script">
+<script>
+$(function(){
+	$('img[title="login"]').click(function(){
+		$('form[name="myform"]').submit();
+	});
+});
+</script>
+</block>
+
+<block name="header">
+<h1>Social Engineer</h1>
+</block>
+
+<block name="container">
+<form method="post" action="{:U('User/on_login')}" id="user-login" name="myform">
+	用户名:<input type="text" name="username"></br>
+	密      码:<input type="password" name="password"></br>
+	验证码: <input type='text' name='code'/><img src="__APP__/Public/code" onclick='this.src=this.src+"?"+Math.random()'/></br>
+	<img src="__Image__/b05.gif" title="login" class="submit"/>
+</form>
+</block>

@@ -1,0 +1,12 @@
+<extend name="User/Base/common"/>
+<block name="title">Social Engineer</block>
+
+
+<block name="container">
+	<form action="__APP__/User/update" method="post">
+		<input type="hidden" name="id" value="{$data.id}">
+		用户名:<input type="text" name="nick" value="{$data.nick}" disabled="disabled"/></br>
+		更新密码:<input type="text" name="passwd" value="{$data.pwd}" /></br>
+		</br><input type="submit" value="修改"/>		
+	</form>
+</block>

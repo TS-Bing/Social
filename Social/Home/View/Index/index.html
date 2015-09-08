@@ -1,0 +1,83 @@
+<extend name="User/Base/common"/>
+<block name="title">Social Engineer</block>
+
+
+<block name="script">
+<script>
+$(function(){
+	$('img[title="search"]').click(function(){
+		$('form[name="myform"]').submit();
+	});
+});
+
+</script>
+</block>
+
+
+<block name="header">
+<h1>Social Engineer</h1>
+</block>
+
+<block name="nav">
+<div class="login">
+<label class="nav-login">WelCome!!! 用户: {$data} ...</label><php>$localtime=date('y年-m-d H:i:s',time());echo $localtime;</php></br><a href="__APP__/User/yaoqingma">生成邀请码</a>..<a href="__APP__/User/logout">退出</a></br>
+</div>
+<div  class="search">
+<form enctype="multipart/form-data" action="" method="get" name="myform">
+		<select name="C1" class="isselect"> 
+			<option value="l1" selected="selected">模糊搜索</option> 
+			<option value="k1">精确搜索</option> 
+		</select>
+		
+		<select name="C2" class="isselect"> 
+			<option value="nick" selected="selected">昵称</option>
+			<option value="name">姓名</option>
+			<option value="mail">邮件</option> 
+			<option value="card">省份证</option> 
+			<option value="phone">电话</option> 
+			<option value="site">来源</option> 
+		</select> 
+		
+		<input type="text" value="请输入关键字" name="C3" class="input1" />
+		
+		<img src="__Image__/b08.gif" title="search" /> 
+		</form>
+
+</div>
+</block>
+
+<block name="container">
+	<table border="1" width="800" >
+		<tr>
+			<th>序列</th>
+			<th>昵称</th>
+			<th>姓名</th>
+			<th>密码</th>
+			<th>Salt</th>
+			
+			<th>电子邮件</th>
+			<th>身份证</th>
+			<th>电话</th>
+			<th>注册IP</th>
+			<th>地址</th>
+			<th>来源站点</th>
+		</tr>
+		<foreach name="test" item="co">
+		<tr align="center">
+			<td>{$stat++}</td>
+			<td>{$co.nick}</td>
+			<td>{$co.name}</td>
+			<td>{$co.pwd}</td>
+			<td>{$co.salt}</td>
+			
+			<td>{$co.mail}</td>
+			<td>{$co.card}</td>
+			<td>{$co.phone}</td>
+			<td>{$co.ip}</td>
+			<td>{$co.address}</td>
+			<td>{$co.site}</td>
+		</tr>
+		</foreach>
+	</table></br>
+	<p>{$page}</p>默认页面显示:{$count}条记录
+</block>

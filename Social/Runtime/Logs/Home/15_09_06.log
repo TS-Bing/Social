@@ -1,0 +1,159 @@
+[ 2015-09-06T10:34:19+08:00 ] 127.0.0.1 /social/index.php/User/CheckName?username=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001430s ]
+SQL: SHOW COLUMNS FROM `social_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `social_user` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001105s ]
+
+[ 2015-09-06T10:39:28+08:00 ] 127.0.0.1 /social/index.php/User/CheckName?username=dfss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001300s ]
+SQL: SHOW COLUMNS FROM `social_user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `social_user` WHERE `name` = 'dfss' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2015-09-06T10:43:29+08:00 ] 127.0.0.1 /social/index.php/User/on_reg.html
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'dfss' for key 'name'
+
+[ 2015-09-06T10:44:10+08:00 ] 127.0.0.1 /social/index.php/User/on_reg.html
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'dfss' for key 'name'
+
+[ 2015-09-06T11:17:09+08:00 ] 127.0.0.1 /social/index.php/User/on_reg.html
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'name'
+
+[ 2015-09-06T11:17:26+08:00 ] 127.0.0.1 /social/index.php/User/on_reg.html
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'name'
+
+[ 2015-09-06T11:18:57+08:00 ] 127.0.0.1 /social/index.php/User/on_reg.html
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'name'
+
+[ 2015-09-06T11:19:21+08:00 ] 127.0.0.1 /social/index.php/User/on_reg.html
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'name'
+
+[ 2015-09-06T11:19:36+08:00 ] 127.0.0.1 /social/index.php/User/on_reg.html
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'name'
+
+[ 2015-09-06T11:31:12+08:00 ] 127.0.0.1 /social/index.php/User/CheckName?username=tese
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001462s ]
+SQL: SHOW COLUMNS FROM `social_user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `social_user` WHERE `name` = 'tese' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2015-09-06T11:36:49+08:00 ] 127.0.0.1 /social/index.php/User/CheckName?username=test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `social_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `social_user` WHERE `name` = 'test' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2015-09-06T12:43:33+08:00 ] 127.0.0.1 /social/index.php/User/CheckName?username=test1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
+SQL: SHOW COLUMNS FROM `social_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `social_user` WHERE `name` = 'test1' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2015-09-06T12:44:20+08:00 ] 127.0.0.1 /social/index.php/User/CheckName?username=ters
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001444s ]
+SQL: SHOW COLUMNS FROM `social_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `social_user` WHERE `name` = 'ters' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+
+[ 2015-09-06T12:46:28+08:00 ] 127.0.0.1 /social/index.php/User/CheckName?username=terss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001646s ]
+SQL: SHOW COLUMNS FROM `social_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `social_user` WHERE `name` = 'terss' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2015-09-06T12:50:30+08:00 ] 127.0.0.1 /social/index.php/User/CheckName?username=tersss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001630s ]
+SQL: SHOW COLUMNS FROM `social_user` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `social_user` WHERE `name` = 'tersss' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000972s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001197s ]
+
+[ 2015-09-06T12:54:35+08:00 ] 127.0.0.1 /social/index.php/User/on_reg.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '}' at line 1
+
+[ 2015-09-06T12:55:12+08:00 ] 127.0.0.1 /social/index.php/User/on_reg.html
+ERR: SQLSTATE[HY000]: General error
+
+[ 2015-09-06T12:57:59+08:00 ] 127.0.0.1 /social/index.php/User/on_reg.html
+ERR: SQLSTATE[HY000]: General error
+
+[ 2015-09-06T12:59:00+08:00 ] 127.0.0.1 /social/index.php/User/on_reg.html
+ERR: SQLSTATE[HY000]: General error
+
+[ 2015-09-06T13:00:47+08:00 ] 127.0.0.1 /social/index.php/User/CheckName?username=tersss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+SQL: SHOW COLUMNS FROM `social_user` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `social_user` WHERE `name` = 'tersss' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001190s ]
+
+[ 2015-09-06T13:01:03+08:00 ] 127.0.0.1 /social/index.php/User/CheckName?username=tersss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `social_user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `social_user` WHERE `name` = 'tersss' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000711s ]
+
+[ 2015-09-06T13:02:01+08:00 ] 127.0.0.1 /social/index.php/User/CheckName?username=sdf
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+SQL: SHOW COLUMNS FROM `social_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `social_user` WHERE `name` = 'sdf' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2015-09-06T13:02:09+08:00 ] 127.0.0.1 /social/index.php/User/CheckName?username=sdfsdf
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `social_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `social_user` WHERE `name` = 'sdfsdf' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2015-09-06T15:47:49+08:00 ] 127.0.0.1 /social/index.php/User/on_login.html
+ERR: 模板不存在:./Social/Home/View/Public/error.html
+
+[ 2015-09-06T15:47:56+08:00 ] 127.0.0.1 /social/index.php/User/on_login.html
+ERR: 模板不存在:./Social/Home/View/Public/error.html
+
